@@ -15,6 +15,6 @@ You will need the following to install on your computer:
 
 ```
 * git clone https://github.com/annaburkat/veganapp.git
-* cd paper_webpage
+* cd veganapp
 * npm install && npm start
 ```
