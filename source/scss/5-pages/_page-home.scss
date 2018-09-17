@@ -1,0 +1,270 @@
+// header - social media links
+.social {
+  margin-top: 10px;
+
+  &__title {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1rem;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.icon {
+  margin: 4px;
+  display: inline-block;
+
+  &--fb {
+    color: $facebook;
+  }
+
+  &--pinterest {
+    color: $pinterest;
+  }
+
+  &--instagram {
+    color: $instagram;
+  }
+
+  &--snapchat {
+    color: $snapchat;
+  }
+}
+// END header - social media links
+
+// header logo
+.logo {
+  text-align: center;
+
+  &__img {
+    width: 300px;
+  }
+
+  &__title {
+    font-family: 'Caveat Brush', cursive;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-top: -20px;
+
+    span {
+      color: #3DB843;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: 'Kreon', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gold;
+    margin: 25px auto;
+  }
+}
+// END header logo
+
+// slider
+.slider {
+  margin: 10px auto 20px;
+
+  &__img {
+    display: none;
+    width: 100%;
+  }
+}
+// END slider
+
+.places {
+  &__map {
+    height: 500px;
+    width: 100%;
+  }
+
+  &__profiles {
+    font-family: 'Kreon', serif;
+    margin: 30px 0;
+  }
+}
+
+.choose {
+  padding-left: 0;
+
+  &__option {
+    font-family: 'Kreon', serif;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  &__label {
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  &__label input:checked + span {
+    background-color: #3DB843;
+  }
+
+  &__checkbox {
+    position: relative;
+    z-index: -9999;
+  }
+
+  &__box {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-left: -10px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+.kind {
+  margin-top: 20px;
+
+  &__option {
+    text-decoration: underline;
+    margin-bottom: 0 !important;
+    font-size: 2rem;
+
+    &--vegan {
+      color: $vegan;
+    }
+
+    &--vegetarian {
+      color: $vegetarian;
+    }
+
+    &--friendly {
+      color: $friendly;
+    }
+
+    &--store {
+      color: $store;
+    }
+
+    &--other {
+      color: $other;
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}
+
+.profile {
+  &__item {
+    margin-top: 15px;
+  }
+
+  &__title {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    color: black;
+  }
+
+  &__details {
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 150%;
+    color: #565161;
+    margin: 0;
+  }
+
+  &__img {
+    height: 200px;
+    margin: 10px 0;
+    display: block;
+  }
+
+  &__description {
+    font-size: 1rem;
+    max-width: 70%;
+    line-height: 140%;
+  }
+}
+
+.popup {
+  padding: 4px;
+
+  &__name {
+    color: #337ab7;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  &__pointer {
+    margin-left: 5px;
+  }
+
+  &__details {
+    font-weight: 500;
+    line-height: 130%;
+    font-size: 0.8rem;
+  }
+
+  &__type {
+      font-weight: 500;
+  }
+
+  &__icon {
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: 5px;
+  }
+}
+
+.categories {
+  &__title {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.3rem;
+    padding: 5px 20px 5px 10px;
+    color: gray;
+
+    .fa {
+      font-size: 1.1rem;
+      margin: 12px;
+    }
+  }
+
+  &__title.active {
+    color: #337ab7 !important;
+  }
+}
+
+.footer {
+  margin: 30px;
+
+  &__title {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__social {
+    text-align: center;
+  }
+
+  &__copyright {
+    text-align: center;
+    margin-top: 10px;
+  }
+}

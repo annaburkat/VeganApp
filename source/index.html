@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <title>VeganisMe</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Kreon:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="assets/css/vendors/vendors-css.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- header -->
+    <header>
+      <div class="row">
+        <div class="col">
+          <div class="social">
+            <p class="social__title">Let's hang out!</p>
+            <div class="social__icons">
+              <a class="icon icon--fb" href="https://www.facebook.com" target="_blank">
+              <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+              </a>
+              <a class="icon icon--pinterest" href="https://pl.pinterest.com" target="_blank">
+              <i class="fa fa-pinterest-square fa-lg" aria-hidden="true"></i>
+              </a>
+              <a class="icon icon--instagram" href="https://www.instagram.com" target="_blank">
+              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              </a>
+              <a class="icon icon--snapchat" href="https://www.snapchat.com" target="_blank">
+              <i class="fa fa-snapchat-square fa-lg" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="logo">
+            <img class="logo__img" src="assets/images/hipsterlogo6.png" alt="log" title="VegenisMe in Cracow!">
+          </div>
+        </div>
+        <div class="col-12">
+          <h1 class="logo__subtitle" id="js-logo-subtitle">Vegan places. Cool places.</h1>
+        </div>
+      </div>
+    </header>
+    <!-- END header -->
+
+    <!-- slider -->
+    <div class="slider">
+      <div class="row">
+        <div class="col-12">
+          <img class="slider__img js-slider__img" src="assets/images/1.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/2.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/3.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/5.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/6.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/7.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/8.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/9.png" alt="">
+          <img class="slider__img js-slider__img" src="assets/images/10.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- END slider -->
+
+    <!--Main part of page-->
+    <section class="shopsTab">
+      <div class="row">
+        <div class="col-12">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs categories" id="js-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link categories__title active" href="#tab-restaurants" aria-controls="tab-restaurants" role="tab" data-toggle="tab">Restaurants &amp; Cafés <i class="fa fa-cutlery fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link categories__title" href="#tab-shops" aria-controls="tab-shops" role="tab" data-toggle="tab">Local stores <i class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- END Nav tabs -->
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- RESTAURANTS -->
+            <div role="tabpanel" class="places restaurants tab-pane fade show active" id="tab-restaurants">
+              <!-- choose type of restaurant -->
+              <ul class="choose">
+                <li class="choose__option">
+                  <label class="choose__label">
+                    <img class="choose__icon" src="assets/images/vegan.png" alt="icon for vegan restaurants">Vegan
+                    <input class="choose__checkbox js-checkbox" name="vegan" type="checkbox" value="vegan" checked>
+                    <span class="choose__box"></span>
+                  </label>
+                </li>
+                <li class="choose__option">
+                  <label class="choose__label">
+                    <img class="choose__icon" src="assets/images/veget.png" alt="icon for vegetarian restaurants">Vegetarian
+                    <input class="choose__checkbox js-checkbox" name="vegetarian" type="checkbox" value="vegetarian" checked>
+                    <span class="choose__box"></span>
+                  </label>
+                </li>
+                <li class="choose__option rest">
+                  <label class="choose__label">
+                    <img class="choose__icon" src="assets/images/fr.png" alt="icon for vegan friendly restaurants">Vegan-friendly
+                    <input class="choose__checkbox js-checkbox" name="friendly" type="checkbox" value="friendly" checked>
+                    <span class="choose__box"></span>
+                </label>
+                </li>
+              </ul>
+              <!-- END choose type of restaurant -->
+
+              <!-- map of restaurants -->
+              <div class="places__map" id="map_restaurants"></div>
+              <!-- END map of restaurants -->
+
+              <!-- restaurants profiles -->
+              <div class="places__profiles">
+                <div class="kind">
+                  <h2 class="kind__option kind__option--vegan">GoVegan!
+                    <img class="kind__icon" src="assets/images/vegan.png" alt="icon for vegan restaurants">
+                  </h2>
+                  <div class="row profile js-kind-vegan">
+                  </div>
+                </div>
+                <div class="kind">
+                  <h2 class="kind__option kind__option--vegetarian">Vegetarian <img class="kind__icon"  src="assets/images/veget.png" alt="icon vegetarian restaurants" />
+                  </h2>
+                  <div class="row profile js-kind-vegetarian">
+                  </div>
+                </div>
+                <div class="kind">
+                  <h2 class="kind__option kind__option--friendly">Vegan friends!  <img class="kind__icon" src="assets/images/fr.png" alt="icon vegan friendly restaurants">
+                  </h2>
+                  <div class="row profile js-kind-friendly">
+                  </div>
+                </div>
+              </div>
+              <!-- END restaurants profiles -->
+            </div>
+            <!-- END RESTARUANTS -->
+
+            <!-- SHOPS -->
+            <div role="tabpanel" class="places shops tab-pane fade" id="tab-shops">
+              <!-- choose type of shop -->
+              <ul class="choose">
+                <li class="choose__option">
+                  <label class="choose__label">
+                    <img class="choose__icon" src="assets/images/store.png" alt="icon for shop">Stores
+                    <input class="choose__checkbox js-checkbox" name="store" type= "checkbox" value="store" checked>
+                    <span class="choose__box"></span>
+                  </label>
+                </li>
+                <li class="choose__option">
+                  <label class="choose__label">
+                    <img class="choose__icon" src="assets/images/other.png" alt="icon for markets and more">Markets n'More
+                    <input class="choose__checkbox js-checkbox" name="other" type= "checkbox" value="other" checked>
+                    <span class="choose__box"></span>
+                  </label>
+                </li>
+              </ul>
+              <!-- END choose type of shop -->
+
+              <!-- map of shops -->
+              <div class="places__map" id="map_shops"></div>
+              <!-- END map of shops -->
+
+              <!-- shops profiles -->
+              <div class="places__profiles shopsProf">
+                <div class="kind">
+                  <h2 class="kind__option kind__option--store">Let's shop!
+                    <img class="kind__icon" src="assets/images/store.png" alt="icon for shops"></h2>
+                  <div class="row profile js-kind-store">
+                  </div>
+                </div>
+
+                <div class="kind">
+                  <h2 class="kind__option kind__option--other">Markets n'More!
+                    <img class="kind__icon" src="assets/images/other.png"  alt="icon for markets and more">
+                    <img src="assets/images/kiosk.png" alt="icon for markets and more">
+                  </h2>
+                  <div class="row profile js-kind-other">
+                  </div>
+                </div>
+              </div>
+              <!-- END shops profiles -->
+            </div>
+            <!-- END SHOPS -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END main part of page-->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-12">
+          <p class="footer__title">VeganisMe! #inCracow</p>
+          <div class="footer__social">
+            <a class="icon icon--fb" href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+            </a>
+            <a class="icon icon--pinterest" href="https://pl.pinterest.com" target="_blank">
+            <i class="fa fa-pinterest-square fa-lg" aria-hidden="true"></i>
+            </a>
+            <a class="icon icon--instagram" href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            </a>
+            <a class="icon icon--snapchat" href="https://www.snapchat.com" target="_blank">
+            <i class="fa fa-snapchat-square fa-lg" aria-hidden="true"></i>
+            </a>
+          </div>
+          <p class="footer__copyright">© Anna Burkat 2017</p>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+  </div>
+
+  <script src="assets/js/vendors/vendors-js.js" type="text/javascript"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJL2r6OFZwRxxjydujI9xto1tgMjG1rU4&callback=initMap" async defer></script>
+
+  <script src="assets/js/app.js" type="text/javascript"></script>
+</body>
+
+
+</html>
