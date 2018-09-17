@@ -101,12 +101,6 @@ gulp.task('scripts', function() {
     .pipe(browserSync.stream());
 });
 
-// gulp.task("jshint", function() {
-//   return gulp.src('vendorSrc/*.js')
-//     .pipe(jshint())
-//     .pipe(jshint.reporter('default'))
-// });
-
 //Concat and Compress Vendor .js and plugin's files
 gulp.task('vendors-js', function() {
   gulp.src(
