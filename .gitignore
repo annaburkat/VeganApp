@@ -91,6 +91,6 @@ Temporary Items
 .apdisk
 .docx
 
-.txt
+*.txt
 
 # End of https://www.gitignore.io/api/osx,node
